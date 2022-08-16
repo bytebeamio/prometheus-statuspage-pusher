@@ -1,9 +1,11 @@
-0fly17tyz248: |
-  avg(
+hzjq0lgjp9f4: |
+  sum(
     rate(
-      http_request_duration_microseconds{
-        quantile="0.5",
-        job="kubernetes-nodes"
-      }[5m]
+      demo_transformation_number_of_records_total[5m]
     )
+  )
+
+h9bzszdqrzvl: |
+  max(
+    demo_transformation_offset_vs_table
   )

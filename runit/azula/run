@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export prometheusPort=80
+export prometheusServer=http://prometheus-server.tools
+export pageid=6nzpqysmnj58
+export auth=eae849cc-f8b8-4663-ac57-4b5e33fbed39
+
+exec /usr/share/bytebeam/prometheus-statuspage-pusher/prometheus-statuspage-pusher -prometheusPort $prometheusPort -pu $prometheusServer -si $pageid -su $auth
